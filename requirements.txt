@@ -1,0 +1,28 @@
+# Core pipeline
+yt-dlp>=2024.11.18
+ffmpeg-python>=0.2.0
+
+# ASR - Transcription
+faster-whisper>=1.0.3
+
+# LLM + Agentic Framework
+openai>=1.40.0
+langgraph>=0.2.27
+langchain>=0.3.0
+langchain-openai>=0.2.0
+
+# NLP & Embeddings
+sentence-transformers>=3.1.1
+spacy>=3.7.6
+
+# Graph & Data
+networkx>=3.3
+pyyaml>=6.0.2
+python-dotenv>=1.0.1
+
+# Visualization
+pyvis>=0.3.2
+streamlit>=1.38.0
+
+# Utilities
+tqdm>=4.66.5

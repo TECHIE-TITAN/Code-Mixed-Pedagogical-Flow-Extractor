@@ -1,0 +1,10 @@
+.venv
+AGENTIC_APPROACH.md
+IMPLEMENTATION_STRATEGY.md
+iREL_Recruitment_Task_2026.pdf
+.cache
+__pycache__
+.env
+data/outputs/*
+data/raw_audio/*
+data/transcripts/*

@@ -1,0 +1,466 @@
+16:28:39 | INFO     | Processing 1 video(s)...
+16:28:39 | INFO     | 
+[1/1] Starting: Data Structures - Linked Lists | CodeWithHarry
+16:28:41 | INFO     | [graph] LangGraph pipeline compiled successfully.
+16:28:41 | INFO     | 
+############################################################
+16:28:41 | INFO     | # Starting pipeline for: Data Structures - Linked Lists | CodeWithHarry
+16:28:41 | INFO     | # URL: https://www.youtube.com/watch?v=TWMCMvfEAv4
+16:28:41 | INFO     | ############################################################
+16:28:41 | INFO     | [ingest] Downloading audio for video_id=v002 from https://www.youtube.com/watch?v=TWMCMvfEAv4
+16:28:41 | INFO     | [ingest] Running: yt-dlp --extract-audio --audio-format wav --audio-quality 0 --output /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v002_raw.%(ext)s --no-playlist --quiet --no-warnings https://www.youtube.com/watch?v=TWMCMvfEAv4
+16:29:11 | INFO     | [ingest] Downloaded: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v002_raw.wav
+16:29:11 | INFO     | [ingest] Converting audio: ffmpeg -y -i /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v002_raw.wav -ar 16000 -ac 1 -c:a pcm_s16le /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v002.wav
+16:29:16 | INFO     | [ingest] Audio ready: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v002.wav
+16:29:23 | INFO     | [transcribe] Loading Whisper model: medium on cpu (int8)
+16:29:23 | INFO     |   ⏳ This will take a few minutes on CPU. Model downloads on first run (~1.5 GB for 'medium').
+16:29:23 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-medium/revision/main "HTTP/1.1 200 OK"
+16:29:24 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/model.bin "HTTP/1.1 302 Found"
+16:29:24 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+16:29:24 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt "HTTP/1.1 307 Temporary Redirect"
+16:29:24 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json "HTTP/1.1 307 Temporary Redirect"
+16:29:24 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json "HTTP/1.1 200 OK"
+16:29:24 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt "HTTP/1.1 200 OK"
+16:29:24 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json "HTTP/1.1 200 OK"
+16:29:24 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json "HTTP/1.1 200 OK"
+16:29:24 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json "HTTP/1.1 200 OK"
+16:29:24 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-medium/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt "HTTP/1.1 200 OK"
+16:29:24 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-medium/xet-read-token/08e178d48790749d25932bbc082711ddcfdfbc4f "HTTP/1.1 200 OK"
+16:50:06 | INFO     | Processing 1 video(s)...
+16:50:06 | INFO     | 
+[1/1] Starting: Data Structures - Linked Lists | CodeWithHarry
+16:50:07 | INFO     | [graph] LangGraph pipeline compiled successfully.
+16:50:07 | INFO     | 
+############################################################
+16:50:07 | INFO     | # Starting pipeline for: Data Structures - Linked Lists | CodeWithHarry
+16:50:07 | INFO     | # URL: https://www.youtube.com/watch?v=TWMCMvfEAv4
+16:50:07 | INFO     | ############################################################
+16:50:07 | INFO     | [ingest] Audio already exists for v002, skipping download.
+16:50:12 | INFO     | [transcribe] Loading Whisper model: medium on cpu (int8)
+16:50:12 | INFO     |   ⏳ This will take a few minutes on CPU. Model downloads on first run (~1.5 GB for 'medium').
+16:50:13 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-medium/revision/main "HTTP/1.1 200 OK"
+16:50:13 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/model.bin "HTTP/1.1 302 Found"
+16:50:13 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-medium/xet-read-token/08e178d48790749d25932bbc082711ddcfdfbc4f "HTTP/1.1 200 OK"
+17:03:22 | INFO     | Processing 1 video(s)...
+17:03:22 | INFO     | 
+[1/1] Starting: Data Structures - Linked Lists | CodeWithHarry
+17:03:23 | INFO     | [graph] LangGraph pipeline compiled successfully.
+17:03:23 | INFO     | 
+############################################################
+17:03:23 | INFO     | # Starting pipeline for: Data Structures - Linked Lists | CodeWithHarry
+17:03:23 | INFO     | # URL: https://www.youtube.com/watch?v=TWMCMvfEAv4
+17:03:23 | INFO     | ############################################################
+17:03:23 | INFO     | [ingest] Audio already exists for v002, skipping download.
+17:03:29 | INFO     | [transcribe] Loading Whisper model: medium on cpu (int8)
+17:03:29 | INFO     |   ⏳ This will take a few minutes on CPU. Model downloads on first run (~1.5 GB for 'medium').
+17:03:29 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-medium/revision/main "HTTP/1.1 200 OK"
+17:03:30 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/model.bin "HTTP/1.1 302 Found"
+17:03:30 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-medium/xet-read-token/08e178d48790749d25932bbc082711ddcfdfbc4f "HTTP/1.1 200 OK"
+17:07:28 | INFO     | [transcribe] Transcribing: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v002.wav
+17:07:28 | INFO     | Processing audio with duration 25:00.543
+17:07:31 | INFO     | VAD filter removed 00:22.767 of audio
+17:07:42 | INFO     | Detected language 'hi' with probability 0.98
+17:07:43 | INFO     | [transcribe] Detected language: hi (probability=0.98)
+17:17:20 | INFO     | Processing 1 video(s)...
+17:17:20 | INFO     | 
+[1/1] Starting: Data Structures - Linked Lists | CodeWithHarry
+17:17:20 | ERROR    | Pipeline failed for v002: No module named 'langgraph'
+Traceback (most recent call last):
+  File "/home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/main.py", line 66, in run_all
+    final_state = run_pipeline_for_video(video)
+  File "/home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/pipeline/graph.py", line 80, in run_pipeline_for_video
+    app = build_pipeline()
+  File "/home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/pipeline/graph.py", line 34, in build_pipeline
+    from langgraph.graph import StateGraph, END  # lazy import
+ModuleNotFoundError: No module named 'langgraph'
+17:17:20 | INFO     | 
+Generating HTML visualizations...
+17:17:20 | WARNING  | [visualize] No output JSON files found.
+17:17:20 | INFO     | 
+============================================================
+17:17:20 | INFO     | PIPELINE SUMMARY
+17:17:20 | INFO     | ============================================================
+17:17:20 | INFO     |   ❌ v002: No module named 'langgraph'
+17:17:20 | INFO     | ============================================================
+17:17:20 | WARNING  | 1 video(s) failed. Check pipeline.log for details.
+17:17:20 | INFO     | 
+🚀 All done! Launch the dashboard with:
+   streamlit run visualization/dashboard.py
+17:17:33 | INFO     | Processing 1 video(s)...
+17:17:33 | INFO     | 
+[1/1] Starting: Data Structures - Linked Lists | CodeWithHarry
+17:17:33 | INFO     | [graph] LangGraph pipeline compiled successfully.
+17:17:33 | INFO     | 
+############################################################
+17:17:33 | INFO     | # Starting pipeline for: Data Structures - Linked Lists | CodeWithHarry
+17:17:33 | INFO     | # URL: https://www.youtube.com/watch?v=TWMCMvfEAv4
+17:17:33 | INFO     | ############################################################
+17:17:33 | INFO     | [ingest] Audio already exists for v002, skipping download.
+17:17:37 | INFO     | [transcribe] Loading Whisper model: small on cpu (int8)
+17:17:37 | INFO     |   ⏳ This will take a few minutes on CPU. Model downloads on first run (~1.5 GB for 'medium').
+17:17:38 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/revision/main "HTTP/1.1 200 OK"
+17:17:38 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/model.bin "HTTP/1.1 302 Found"
+17:17:39 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt "HTTP/1.1 307 Temporary Redirect"
+17:17:39 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/xet-read-token/536b0662742c02347bc0e980a01041f333bce120 "HTTP/1.1 200 OK"
+17:17:39 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/config.json "HTTP/1.1 307 Temporary Redirect"
+17:17:39 | INFO     | HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+17:17:39 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt "HTTP/1.1 200 OK"
+17:17:39 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/config.json "HTTP/1.1 200 OK"
+17:17:39 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json "HTTP/1.1 200 OK"
+17:17:39 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt "HTTP/1.1 200 OK"
+17:17:39 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/config.json "HTTP/1.1 200 OK"
+17:17:39 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json "HTTP/1.1 200 OK"
+17:19:01 | INFO     | [transcribe] Transcribing: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v002.wav
+17:19:01 | INFO     | Processing audio with duration 25:00.543
+17:19:04 | INFO     | VAD filter removed 00:22.767 of audio
+17:19:10 | INFO     | Detected language 'hi' with probability 0.98
+17:19:10 | INFO     | [transcribe] Detected language: hi (probability=0.98)
+17:59:22 | INFO     | [transcribe] Done. 111 segments, 1181 words.
+17:59:23 | INFO     | [normalize] Processing 5 chunks for v002
+17:59:23 | INFO     | [normalize] Chunk 1/5 ...
+17:59:25 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:25 | INFO     | Retrying request to /chat/completions in 0.414142 seconds
+17:59:27 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:27 | INFO     | Retrying request to /chat/completions in 0.872953 seconds
+17:59:28 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:28 | WARNING  | [normalize] Attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:28 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:28 | INFO     | Retrying request to /chat/completions in 0.453272 seconds
+17:59:30 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:30 | INFO     | Retrying request to /chat/completions in 0.870525 seconds
+17:59:31 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:31 | WARNING  | [normalize] Attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:32 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:32 | INFO     | Retrying request to /chat/completions in 0.443369 seconds
+17:59:32 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:32 | INFO     | Retrying request to /chat/completions in 0.943549 seconds
+17:59:34 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:34 | WARNING  | [normalize] Attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:34 | ERROR    | [normalize] All retries exhausted, returning original chunk.
+17:59:34 | INFO     | [normalize] Chunk 2/5 ...
+17:59:34 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:34 | INFO     | Retrying request to /chat/completions in 0.391463 seconds
+17:59:35 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:35 | INFO     | Retrying request to /chat/completions in 0.997662 seconds
+17:59:36 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:36 | WARNING  | [normalize] Attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:36 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:36 | INFO     | Retrying request to /chat/completions in 0.482531 seconds
+17:59:38 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:38 | INFO     | Retrying request to /chat/completions in 0.807637 seconds
+17:59:39 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:39 | WARNING  | [normalize] Attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:39 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:39 | INFO     | Retrying request to /chat/completions in 0.394836 seconds
+17:59:41 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:41 | INFO     | Retrying request to /chat/completions in 0.965903 seconds
+17:59:42 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:42 | WARNING  | [normalize] Attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:42 | ERROR    | [normalize] All retries exhausted, returning original chunk.
+17:59:42 | INFO     | [normalize] Chunk 3/5 ...
+17:59:43 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:43 | INFO     | Retrying request to /chat/completions in 0.375224 seconds
+17:59:43 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:43 | INFO     | Retrying request to /chat/completions in 0.841012 seconds
+17:59:45 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:45 | WARNING  | [normalize] Attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:45 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:45 | INFO     | Retrying request to /chat/completions in 0.393860 seconds
+17:59:46 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:46 | INFO     | Retrying request to /chat/completions in 0.857880 seconds
+17:59:47 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:47 | WARNING  | [normalize] Attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:48 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:48 | INFO     | Retrying request to /chat/completions in 0.411088 seconds
+17:59:49 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:49 | INFO     | Retrying request to /chat/completions in 0.952810 seconds
+17:59:50 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:50 | WARNING  | [normalize] Attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:50 | ERROR    | [normalize] All retries exhausted, returning original chunk.
+17:59:50 | INFO     | [normalize] Chunk 4/5 ...
+17:59:50 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:50 | INFO     | Retrying request to /chat/completions in 0.400381 seconds
+17:59:51 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:51 | INFO     | Retrying request to /chat/completions in 0.882699 seconds
+17:59:52 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:52 | WARNING  | [normalize] Attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:52 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:52 | INFO     | Retrying request to /chat/completions in 0.464841 seconds
+17:59:53 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:53 | INFO     | Retrying request to /chat/completions in 0.798308 seconds
+17:59:54 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:54 | WARNING  | [normalize] Attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:55 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:55 | INFO     | Retrying request to /chat/completions in 0.408415 seconds
+17:59:55 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:55 | INFO     | Retrying request to /chat/completions in 0.789220 seconds
+17:59:57 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:57 | WARNING  | [normalize] Attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:57 | ERROR    | [normalize] All retries exhausted, returning original chunk.
+17:59:57 | INFO     | [normalize] Chunk 5/5 ...
+17:59:57 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:57 | INFO     | Retrying request to /chat/completions in 0.385931 seconds
+17:59:58 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:58 | INFO     | Retrying request to /chat/completions in 0.974512 seconds
+17:59:59 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:59 | WARNING  | [normalize] Attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+17:59:59 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+17:59:59 | INFO     | Retrying request to /chat/completions in 0.498447 seconds
+18:00:00 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:00 | INFO     | Retrying request to /chat/completions in 0.820716 seconds
+18:00:01 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:01 | WARNING  | [normalize] Attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:02 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:02 | INFO     | Retrying request to /chat/completions in 0.484595 seconds
+18:00:02 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:02 | INFO     | Retrying request to /chat/completions in 0.936473 seconds
+18:00:04 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:04 | WARNING  | [normalize] Attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:04 | ERROR    | [normalize] All retries exhausted, returning original chunk.
+18:00:04 | INFO     | [normalize] Done. 0 new glossary entries added.
+18:00:04 | INFO     | [extract] Extracting concepts from 2 chunks ...
+18:00:04 | INFO     | [extract] Chunk 1/2 ...
+18:00:04 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:04 | INFO     | Retrying request to /chat/completions in 0.435654 seconds
+18:00:05 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:05 | INFO     | Retrying request to /chat/completions in 0.876178 seconds
+18:00:06 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:06 | WARNING  | [extract] Attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:06 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:06 | INFO     | Retrying request to /chat/completions in 0.471945 seconds
+18:00:07 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:07 | INFO     | Retrying request to /chat/completions in 0.812629 seconds
+18:00:08 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:08 | WARNING  | [extract] Attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:09 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:09 | INFO     | Retrying request to /chat/completions in 0.376005 seconds
+18:00:09 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:09 | INFO     | Retrying request to /chat/completions in 0.998711 seconds
+18:00:11 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:11 | WARNING  | [extract] Attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:11 | ERROR    | [extract] All retries exhausted for this chunk.
+18:00:11 | INFO     | [extract] Chunk 2/2 ...
+18:00:11 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:11 | INFO     | Retrying request to /chat/completions in 0.480565 seconds
+18:00:12 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:12 | INFO     | Retrying request to /chat/completions in 0.844257 seconds
+18:00:13 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:13 | WARNING  | [extract] Attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:13 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:13 | INFO     | Retrying request to /chat/completions in 0.480259 seconds
+18:00:14 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:14 | INFO     | Retrying request to /chat/completions in 0.801256 seconds
+18:00:15 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:15 | WARNING  | [extract] Attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:16 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:16 | INFO     | Retrying request to /chat/completions in 0.434774 seconds
+18:00:16 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:16 | INFO     | Retrying request to /chat/completions in 0.859263 seconds
+18:00:17 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+18:00:17 | WARNING  | [extract] Attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+18:00:17 | ERROR    | [extract] All retries exhausted for this chunk.
+18:00:20 | INFO     | Use pytorch device_name: cpu
+18:00:20 | INFO     | Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+18:00:21 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+18:00:21 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+18:00:21 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+18:00:22 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+18:00:22 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+18:00:22 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+18:00:23 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+18:00:23 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+18:00:24 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+18:00:24 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+18:00:24 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+18:00:25 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+18:00:26 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+18:00:27 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+18:00:27 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+18:00:27 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+18:00:28 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+18:00:28 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+18:00:28 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+18:00:29 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+18:00:29 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+18:00:30 | INFO     | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/xet-read-token/c9745ed1d9f207416be6d2e6f8de32d1f16199bf "HTTP/1.1 200 OK"
+18:00:46 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+18:00:47 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+18:00:47 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+18:00:47 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+18:00:48 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+18:00:49 | INFO     | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+18:00:49 | INFO     | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+18:00:50 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+18:00:51 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/vocab.txt "HTTP/1.1 200 OK"
+18:00:51 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/vocab.txt "HTTP/1.1 200 OK"
+18:00:52 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+18:00:52 | WARNING  | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+18:00:52 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer.json "HTTP/1.1 200 OK"
+18:00:52 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer.json "HTTP/1.1 200 OK"
+18:00:53 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+18:00:53 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+18:00:54 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/special_tokens_map.json "HTTP/1.1 200 OK"
+18:00:54 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/special_tokens_map.json "HTTP/1.1 200 OK"
+18:00:54 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+18:00:55 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+18:00:55 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+18:00:56 | INFO     | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+18:00:56 | INFO     | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+18:00:56 | INFO     | [extract] Dedup: 0 → 0 concepts
+18:00:56 | INFO     | [extract] Extracted 0 unique concepts.
+18:00:56 | WARNING  | [prereq] No concepts found for v002, skipping.
+18:00:56 | INFO     | [validate] Validating graph for v002 (0 concepts, 0 edges, retry=0)
+18:00:56 | INFO     | [validate] ✅ Graph for v002 passed validation.
+18:00:56 | INFO     | [output] Serializing results for v002
+18:00:56 | INFO     | [output] JSON saved: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_output.json
+18:00:56 | INFO     | [output] GraphML saved: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.graphml
+18:00:56 | INFO     | 
+============================================================
+✅ Pipeline complete for: Data Structures - Linked Lists | CodeWithHarry
+   URL     : https://www.youtube.com/watch?v=TWMCMvfEAv4
+   Lang    : Hindi, English
+   Concepts: 0
+   Edges   : 0
+   Retries : 0
+   JSON    : /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_output.json
+   GraphML : /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.graphml
+============================================================
+18:00:56 | INFO     | 
+Generating HTML visualizations...
+18:00:56 | INFO     | [visualize] HTML graph saved: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.html
+18:00:56 | INFO     |   HTML graph: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.html
+18:00:56 | INFO     | 
+============================================================
+18:00:56 | INFO     | PIPELINE SUMMARY
+18:00:56 | INFO     | ============================================================
+18:00:56 | INFO     |   ✅ v002: 0 concepts, 0 edges → /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_output.json
+18:00:56 | INFO     | ============================================================
+18:00:56 | INFO     | 
+🚀 All done! Launch the dashboard with:
+   streamlit run visualization/dashboard.py
+18:46:33 | INFO     | Processing 1 video(s)...
+18:46:33 | INFO     | 
+[1/1] Starting: Data Structures - Linked Lists | CodeWithHarry
+18:46:33 | INFO     | [graph] LangGraph pipeline compiled successfully.
+18:46:33 | INFO     | 
+############################################################
+18:46:33 | INFO     | # Starting pipeline for: Data Structures - Linked Lists | CodeWithHarry
+18:46:33 | INFO     | # URL: https://www.youtube.com/watch?v=TWMCMvfEAv4
+18:46:33 | INFO     | ############################################################
+18:46:33 | INFO     | [ingest] Audio already exists for v002, skipping download.
+18:46:36 | INFO     | [transcribe] Loading cached transcript for v002
+18:46:36 | INFO     | [normalize] Processing 5 chunks for v002
+18:46:36 | INFO     | [normalize] Chunk 1/5 ...
+18:46:37 | INFO     | AFC is enabled with max remote calls: 10.
+18:46:45 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:46:45 | INFO     | [normalize] Chunk 2/5 ...
+18:46:45 | INFO     | AFC is enabled with max remote calls: 10.
+18:46:46 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:46:46 | WARNING  | [llm_client] Gemini attempt 1 failed: 'NoneType' object has no attribute 'strip'. Retrying in 1s...
+18:46:47 | INFO     | AFC is enabled with max remote calls: 10.
+18:46:48 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:46:48 | WARNING  | [llm_client] Gemini attempt 2 failed: 'NoneType' object has no attribute 'strip'. Retrying in 2s...
+18:46:50 | INFO     | AFC is enabled with max remote calls: 10.
+18:46:50 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:46:50 | WARNING  | [llm_client] Gemini attempt 3 failed: 'NoneType' object has no attribute 'strip'. Retrying in 4s...
+18:46:50 | ERROR    | [normalize] Chunk normalization failed: [llm_client] Gemini: all retries exhausted.. Returning original.
+18:46:50 | INFO     | [normalize] Chunk 3/5 ...
+18:46:50 | INFO     | AFC is enabled with max remote calls: 10.
+18:46:56 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:46:56 | INFO     | [normalize] Chunk 4/5 ...
+18:46:56 | INFO     | AFC is enabled with max remote calls: 10.
+18:47:02 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:47:02 | INFO     | [normalize] Chunk 5/5 ...
+18:47:02 | INFO     | AFC is enabled with max remote calls: 10.
+18:47:09 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:47:09 | INFO     | [normalize] Done. 75 new glossary entries added.
+18:47:09 | INFO     | [extract] Extracting concepts from 2 chunks ...
+18:47:09 | INFO     | [extract] Chunk 1/2 ...
+18:47:09 | INFO     | AFC is enabled with max remote calls: 10.
+18:47:12 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:47:12 | INFO     | [extract] Chunk 2/2 ...
+18:47:12 | INFO     | AFC is enabled with max remote calls: 10.
+18:47:17 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:47:18 | INFO     | Use pytorch device_name: cpu
+18:47:18 | INFO     | Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+18:47:19 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+18:47:19 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+18:47:19 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+18:47:19 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+18:47:20 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+18:47:20 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+18:47:20 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+18:47:21 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+18:47:21 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+18:47:21 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+18:47:22 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+18:47:22 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+18:47:22 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+18:47:22 | WARNING  | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+18:47:23 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+18:47:23 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+18:47:23 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+18:47:23 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+18:47:24 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+18:47:24 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+18:47:24 | INFO     | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+18:47:25 | INFO     | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+18:47:25 | INFO     | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+18:47:26 | INFO     | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+18:47:26 | INFO     | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+18:47:26 | INFO     | [extract] Dedup: 16 → 15 concepts
+18:47:26 | INFO     | [extract] Extracted 15 unique concepts.
+18:47:26 | INFO     | [prereq] Mapping prerequisites for 15 concepts in v002
+18:47:26 | INFO     | AFC is enabled with max remote calls: 10.
+18:47:32 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+18:47:32 | INFO     | [prereq] Found 8 prerequisite edges for v002
+18:47:32 | INFO     | [validate] Validating graph for v002 (15 concepts, 8 edges, retry=0)
+18:47:32 | WARNING  | [validate] ⚠ 1 edges have confidence below 0.6: v002_concept_1→v002_concept_15 (0.50)
+18:47:32 | INFO     | [validate] ✅ Graph for v002 passed validation.
+18:47:32 | INFO     | [output] Serializing results for v002
+18:47:32 | INFO     | [output] JSON saved: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_output.json
+18:47:32 | INFO     | [output] GraphML saved: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.graphml
+18:47:32 | INFO     | 
+============================================================
+✅ Pipeline complete for: Data Structures - Linked Lists | CodeWithHarry
+   URL     : https://www.youtube.com/watch?v=TWMCMvfEAv4
+   Lang    : Hindi, English
+   Concepts: 15
+   Edges   : 8
+   Retries : 0
+   JSON    : /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_output.json
+   GraphML : /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.graphml
+============================================================
+18:47:32 | INFO     | 
+Generating HTML visualizations...
+18:47:32 | INFO     | [visualize] HTML graph saved: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.html
+18:47:32 | INFO     |   HTML graph: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_graph.html
+18:47:32 | INFO     | 
+============================================================
+18:47:32 | INFO     | PIPELINE SUMMARY
+18:47:32 | INFO     | ============================================================
+18:47:32 | INFO     |   ✅ v002: 15 concepts, 8 edges → /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/outputs/v002_output.json
+18:47:32 | INFO     | ============================================================
+18:47:32 | INFO     | 
+🚀 All done! Launch the dashboard with:
+   streamlit run visualization/dashboard.py
+14:36:28 | INFO     | Processing 5 video(s)...
+14:36:28 | INFO     | 
+[1/5] Starting: Recursion Explained in Hinglish | Abdul Bari
+14:36:29 | INFO     | [graph] LangGraph pipeline compiled successfully.
+14:36:29 | INFO     | 
+############################################################
+14:36:29 | INFO     | # Starting pipeline for: Recursion Explained in Hinglish | Abdul Bari
+14:36:29 | INFO     | # URL: https://www.youtube.com/watch?v=ETiZpSajasI
+14:36:29 | INFO     | ############################################################
+14:36:29 | INFO     | [ingest] Downloading audio for video_id=v001 from https://www.youtube.com/watch?v=ETiZpSajasI
+14:36:29 | INFO     | [ingest] Running: yt-dlp --extract-audio --audio-format wav --audio-quality 0 --output /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v001_raw.%(ext)s --no-playlist --quiet --no-warnings https://www.youtube.com/watch?v=ETiZpSajasI
+14:39:20 | INFO     | [ingest] Downloaded: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v001_raw.wav
+14:39:20 | INFO     | [ingest] Converting audio: ffmpeg -y -i /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v001_raw.wav -ar 16000 -ac 1 -c:a pcm_s16le /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v001.wav
+14:39:49 | INFO     | [ingest] Audio ready: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v001.wav
+14:39:54 | INFO     | [transcribe] Loading Whisper model: small on cpu (int8)
+14:39:54 | INFO     |   ⏳ This will take a few minutes on CPU. Model downloads on first run (~1.5 GB for 'medium').
+14:39:54 | INFO     | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/revision/main "HTTP/1.1 200 OK"
+14:39:55 | INFO     | [transcribe] Transcribing: /home/vansh-goyal/Desktop/WorkSpace/Sem-4/IREL Task/code-mixed-pedagogy-extractor/data/raw_audio/v001.wav
+14:40:17 | INFO     | Processing audio with duration 05:06:07.994
+14:48:03 | INFO     | VAD filter removed 22:22.864 of audio

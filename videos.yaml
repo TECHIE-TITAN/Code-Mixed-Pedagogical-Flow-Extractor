@@ -1,0 +1,49 @@
+# videos.yaml — Source video configuration
+# Add/edit your 5 code-mixed educational videos here.
+# These are EXAMPLE placeholders — replace with your chosen real video URLs.
+
+videos:
+  - video_id: "v001"
+    title: "Recursion Explained in Hinglish | Abdul Bari"
+    url: "https://www.youtube.com/watch?v=ETiZpSajasI"
+    language_mix:
+      - "Hindi"
+      - "English"
+    subject: "Computer Science"
+    notes: "Classic Hinglish CS lecture, heavy use of 'function wala concept'"
+
+  - video_id: "v002"
+    title: "Data Structures - Linked Lists | CodeWithHarry"
+    url: "https://www.youtube.com/watch?v=TWMCMvfEAv4"
+    language_mix:
+      - "Hindi"
+      - "English"
+    subject: "Computer Science"
+    notes: "Hinglish explanation of pointers and linked list nodes"
+
+  - video_id: "v003"
+    title: "Newton's Laws of Motion | Telugu-English Physics"
+    url: "https://www.youtube.com/watch?v=wPTdg0N__CA"
+    language_mix:
+      - "Telugu"
+      - "English"
+    subject: "Physics"
+    notes: "Telugu-English mix; uses colloquial analogies for force and mass"
+
+  - video_id: "v004"
+    title: "Sorting Algorithms | Tamil-English Tutorial"
+    url: "https://www.youtube.com/watch?v=Q7a8LW5Cfho&list=PLjKqLOYP0npbUuW7iveycDF3IA819ysN1&index=1"
+    language_mix:
+      - "Tamil"
+      - "English"
+    subject: "Computer Science"
+    notes: "Tamil-English code-mixed; explains bubble sort and merge sort"
+
+  - video_id: "v005"
+    title: "Calculus - Derivatives | Hinglish Math"
+    url: "https://www.youtube.com/watch?v=5yfh5cf4-0w"
+    language_mix:
+      - "Hindi"
+      - "English"
+    subject: "Mathematics"
+    notes: "Hinglish math lecture; explains limits before derivatives"
