@@ -1,10 +1,10 @@
-# 🎓 Code-Mixed Pedagogical Flow Extractor
+# Code-Mixed Pedagogical Flow Extractor
 
 An agentic NLP pipeline that ingests code-mixed educational videos (Hinglish, Telugu-English, Tamil-English), transcribes them with Whisper, normalizes colloquial Indic terms via GPT-4o, extracts technical concepts, and builds a prerequisite dependency graph — all orchestrated by **LangGraph** with a self-reflection validation loop.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 videos.yaml (5 URLs)
@@ -39,7 +39,24 @@ streamlit dashboard (interactive visual)
 
 ---
 
-## ⚙️ Setup
+### Other architectural decisions I considered
+
+**Considered adding an agent that speeds up the video to reduce processing time**
+Came to know that whisper already does that.
+
+**Tried parallel processing and multi-pass modeling**
+This approach included dividing the video into smaller chunks to simultaneously process them. Multi-pass modelling included to pass the video through a `tiny` Whisper model first that would run faster and pass low-confidence chunks of the video through a better accurate `small` Whisper model. This proved ineffective during runtime.
+
+**Other Agentic approaches that can be thought of but couldn't get time to try out**
+- **Multi-Agent Extraction:** Multiple LLMs try to extract the transcript and a "Judge" agent merges the transcriptions using voting. This may lead to higher cost of running multiple models. Though accuracy might improve.
+- **RAG-Augmented Extraction:** Vector DB might be implemented during the retrieval step.
+- **Real-Time Approach:** The prerequisite graph is made parallel to video streaming.
+
+## Demo Video
+
+[https://drive.google.com/file/d/1wn_MJJn-Cn827E9r7SmQw51Xr2BPPwF6/view?usp=sharing]
+
+## Setup
 
 ### 1. Clone & create virtual environment
 ```bash
@@ -51,10 +68,7 @@ source .venv/bin/activate
 
 ### 2. Install system dependencies
 ```bash
-# Ubuntu/Debian
 sudo apt install ffmpeg
-
-# Install yt-dlp
 pip install yt-dlp
 ```
 
@@ -76,10 +90,9 @@ Edit `videos.yaml` — replace the placeholder URLs with real YouTube video URLs
 
 ---
 
-## 🚀 Running the Pipeline
+## Running the Pipeline
 
 ```bash
-# Process all 5 videos
 python main.py
 
 # Process only one video
@@ -94,7 +107,7 @@ streamlit run visualization/dashboard.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 code-mixed-pedagogy-extractor/
@@ -129,7 +142,7 @@ code-mixed-pedagogy-extractor/
 
 ---
 
-## 📤 Output Format
+## Output Format
 
 ### `data/outputs/{video_id}_output.json`
 ```json
@@ -161,22 +174,16 @@ code-mixed-pedagogy-extractor/
 
 ---
 
-## 🎬 Video Sources
+## Video Sources
 
-| ID | Title | Language Mix | URL |
-|----|-------|-------------|-----|
-| v001 | ... | Hindi-English | ... |
-| v002 | ... | Hindi-English | ... |
-| v003 | ... | Telugu-English | ... |
-| v004 | ... | Tamil-English | ... |
-| v005 | ... | Hindi-English | ... |
+They are given in `videos.yaml`
 
 ---
 
-## 💡 Design Decisions
+## Design Decisions
 
-**Why Whisper `medium` on CPU?**
-Your system (i7-1360P, no GPU) can run `medium` in ~15 min per 10-min video with `int8` quantization. It handles code-mixed speech better than `base` while still fitting in 16 GB RAM.
+**Why Whisper `large`/`medium`/`small` on CPU?**
+Your system (i7-1360P, no GPU) can run `medium` in ~15 min per 10-min video with `int8` quantization. It handles code-mixed speech better than `base` while still fitting in 16 GB RAM. Tried running `small` on laptop cpu and `large` on Google Colab
 
 **Why LangGraph for orchestration?**
 LangGraph's `StateGraph` natively supports cycles (the validation→retry loop). State is immutable and fully traceable, making debugging straightforward.
@@ -189,13 +196,13 @@ JSON for LLM I/O and human readability. GraphML for compatibility with graph too
 
 ---
 
-## ⚠️ Hardware Notes
+## Hardware Notes
 
 | Component | Recommended | This Repo Default |
 |-----------|------------|-------------------|
 | GPU | NVIDIA (any) | CPU (works, slower) |
 | Whisper model | large-v3 with GPU | `medium` on CPU |
-| RAM | 16 GB+ | ✅ Works on 16 GB |
+| RAM | 16 GB+ | Works on 16 GB |
 | Processing time | ~2 min/video (GPU) | ~20 min/video (CPU) |
 
 Change `WHISPER_MODEL_SIZE` in `config.py` to `"base"` for faster but less accurate transcription.
